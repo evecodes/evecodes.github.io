@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(155, 0, 216);
+    font-family: 'Odibee Sans', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 30rem;
+    z-index: 0;
+}
+
+p {
+    color: white;
+    user-select: none;
+}
+
+footer {
+    background-color: rgba(160, 160, 160, 0.5);
+	position: fixed;
+	padding: 1em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+footer p {
+    text-align: center;
+	font-size: 0.8rem;
+	color: rgb(0, 0, 0);
+}
+
+
+/* Main components */
+.grid-container {
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(223, 223, 223);
+    position: relative;
+    user-select: none;
+    z-index: 2;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.1rem;
+    width: 65%;
+    height: 70%;
+    /* background-color: rgb(179, 179, 179); */
+    margin: auto;
+    border-radius: 0.5rem;
+    user-select: none;
+    z-index: 2;
+}
+
+.button-box {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    /* background-color: rgb(141, 141, 141); */
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin: auto;
+    width: 90%;
+    height: 6rem;
+    border-radius: 0.5rem;
+    border: solid 0.1rem rgb(255, 255, 255);
+    box-shadow: 0 0 1rem rgba(95, 94, 128, 0.5);
+}
+
+
+/* Buttons and misc items*/
+
+/* Close X button */
+.close-button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transform: translate(5%, 20%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.button-stripe {
+    width: 2rem;
+    height: 3px;
+    margin: 0.35rem auto;
+    background-color: white;
+    display: block;
+    z-index: 2;
+}
+
+.close-button:hover{
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.4);
+}
+
+.button-stripe:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);    
+}
+
+.button-stripe:nth-child(2){
+    visibility: hidden;   
+}
+
+.button-stripe:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);    
+}
+
+/* Button one */
+.button-one {
+    background-color: purple;
+}
+
+.button-one:hover {
+    transition: all 0.2s ease-out;
+    background-color: rgb(201, 0, 201);
+}
+
+.button-one:active {
+    background-color: rgb(201, 0, 201);
+    transform: translateY(0.2rem);
+}
+
+.button-one-alive {
+    background-color: blue;
+}
+
+.button-one-alive:hover {
+    transition: all 0.2s ease-out;
+    background-color: rgb(0, 0, 153);
+}
+
+.button-one-alive:active {
+    background-color: rgb(0, 0, 153);
+    transform: translateY(0.2rem);
+}
+
+/* Button two */
+.button-two {
+    background-color: rgb(196, 0, 0);
+}
+
+.button-two:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.button-two:active {
+    background-color: rgb(255, 0, 0);
+    transform: translateY(0.2rem);
+}
+
+/* Button three */
+.button-three {
+    background-color: #20b2aa;
+}
+
+.button-three:hover{
+    background-color: #27dfd5;
+}
+
+.button-three:active{
+    background-color: #27dfd5;
+    transform: translateY(0.2rem);
+}
+
+/* Button four */
+.button-four {
+    background-color: yellowgreen;
+}
+
+.button-four:hover {
+    background-color: rgb(175, 240, 45);
+}
+
+.button-four:active {
+    background-color: rgb(175, 240, 45);
+    transform: translateY(0.2rem);
+}
+
+.message-btn4 {
+    position: relative;
+}
+
+/* Animated SVG component */
+.art-base {
+    position: absolute;
+    z-index: 0;
+    user-select: none;
+    width: 15rem;
+    left: 50%;
+    top: 15rem;
+    transform: translateX(-50%);
+}
+
+.art-animation {
+    animation-name: SVG-animated;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes SVG-animated {
+    0% {left: 50%; transform: translateX(-50%); top: 12rem;}
+    50% {left: 50%; transform: translateX(-50%); top: 1rem;}
+    100% {left: 50%; transform: translateX(-50%); top: 1rem;}
+}
+
+
+/* Javascript (toggle) classes */
+.no-select {
+    user-select: none;
+    cursor: auto;
+}
+
+.hide-button {
+    visibility: hidden;
+}
+
+.hide-message {
+    visibility: hidden;
+}
+
+.message-btn4 {
+    color: red;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.overlay-message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.overlay-message > p {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Mukta', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+    width: max(50%, 10rem);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7%;
+}
+
+.overlay-hidden {
+    visibility: hidden;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 720px) {
+    h1 {
+        width: 70%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        max-width: 10ch;
+    }
+
+    .grid-container {
+        height: 40rem;
+        margin-top: 1.25rem;
+    }
+    
+    .gridbox {
+        grid-template: auto / repeat(1, 1fr);
+        gap: 0.5rem;
+        height: 80%;
+        width: 80%;
+    }
+
+    .overlay-message > p {
+        width: max(80%, 10rem);
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20%;
+    }
+}

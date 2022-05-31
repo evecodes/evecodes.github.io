@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav {
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.icon-small {
+    width: 1.5rem;
+}
+
+.icon-large {
+    width: 4rem;
+}
