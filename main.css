@@ -1,3 +1,8 @@
+:root {
+    --main-color: #000;
+    --key-color: #f21439;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +10,64 @@
 }
 
 nav {
+    display: flex;
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    justify-content: center;
 }
 
 a {
     text-decoration: none;
 }
 
+nav > a {
+    color: var(--main-color);
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+}
+
 footer {
+    display: flex;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 .icon-small {
     width: 1.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
 
 .icon-large {
     width: 4rem;
 }
+
+
+/* Media queries */
+
+@media screen and (max-width: 720px) {
+    /* nav bar hide, hamburger menu appear*/
+}
+
+
+/*Font ref:
+
+font-family: 'Arimo', sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: objektiv-mk1,sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: brandon-grotesque,sans-serif;
+font-weight: 100;
+font-style: normal;
+
+font-family: brandon-grotesque,sans-serif;
+font-weight: 300;
+font-style: normal; */
