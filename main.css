@@ -11,6 +11,16 @@
     box-sizing: border-box;
 }
 
+/* body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+main {
+    margin-top: clamp(0.2rem, 5vh, 25rem);
+}
+
 
 /* Navigation */
 
@@ -18,7 +28,7 @@ nav {
     background-color: var(--element-transparency);
     display: flex;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     justify-content: center;
     gap: 2.8rem;
 }
@@ -33,6 +43,7 @@ nav > a {
     font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
+    font-size: clamp(0.75rem, 2vw, 1rem);
 }
 
 
@@ -59,6 +70,15 @@ nav > a {
     margin-right: 2rem;
 }
 
+.link-title-art {
+    margin-left: clamp(1rem, 2vw, 3rem);
+    margin-right: clamp(1rem, 2vw, 3rem);
+}
+
+.link-title-code {
+    margin-left: clamp(1rem, 10vw, 15rem);
+}
+
 .link-title-art, .link-title-code {
     color: var(--main-color);
     font-family: brandon-grotesque,sans-serif;
@@ -69,20 +89,43 @@ nav > a {
 }
 
 .title-ampersand {
-    color: var(--key-color);
+    color: var(--secondary-color);
     font-family: brandon-grotesque,sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: clamp(3rem, 10vw, 8.5rem);
+    margin-right: clamp(1rem, 3vw, 5rem);
+    margin-left: clamp(1rem, 8vw, 15rem);
 }
 
 .creature-art {
-    max-width: 50%;
+    max-width: 60%;
     width: auto;
     height: auto;
-    padding-top: 3rem;
+    padding-top: min(95%, 1rem);
     padding-left: min(95%, 2rem);
     padding-right: min(95%, 2rem);
+    padding-bottom: min(95%, 1rem); /*shorthand padding? */
+    transform: translateX(-15%);
+}
+
+.link-title-art:hover, .link-title-code:hover {
+    color: var(--key-color);
+}
+
+
+/* Art page */
+
+
+
+/* Code page */
+
+
+
+/* About/contact */
+
+.icon-large {
+    width: 4rem;
 }
 
 
@@ -93,9 +136,9 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: auto;
     background-color: var(--element-transparency);
 }
 
@@ -106,11 +149,7 @@ footer {
 }
 
 .icon-small {
-    width: 1.5rem;
-}
-
-.icon-large {
-    width: 4rem;
+    width: 1.5rem; /* = too big on small (mobile) horizontal, img title/alternate text needed */
 }
 
 
