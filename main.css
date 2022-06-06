@@ -11,14 +11,9 @@
     box-sizing: border-box;
 }
 
-/* body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-} */
-
 main {
     margin-top: clamp(0.2rem, 5vh, 25rem);
+    margin-bottom: 3rem;
 }
 
 
@@ -46,6 +41,10 @@ nav > a {
     font-size: clamp(0.75rem, 2vw, 1rem);
 }
 
+.nav-active {
+    text-decoration: underline var(--key-color);
+}
+
 
 /* Home page */
 
@@ -64,10 +63,10 @@ nav > a {
     z-index: -1;
 }
 
-.grid-template > a, p {
+.horz-lineup {
     display: inline;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
 }
 
 .link-title-art {
@@ -105,8 +104,8 @@ nav > a {
     padding-top: min(95%, 1rem);
     padding-left: min(95%, 2rem);
     padding-right: min(95%, 2rem);
-    padding-bottom: min(95%, 1rem); /*shorthand padding? */
-    transform: translateX(-15%);
+    padding-bottom: min(95%, 1rem);
+    transform: translateX(-15%); /* img title/alternate text needed */
 }
 
 .link-title-art:hover, .link-title-code:hover {
@@ -115,7 +114,7 @@ nav > a {
 
 
 /* Art page */
-
+/* img title/alternate text needed */
 
 
 /* Code page */
@@ -149,7 +148,7 @@ footer {
 }
 
 .icon-small {
-    width: 1.5rem; /* = too big on small (mobile) horizontal, img title/alternate text needed */
+    width: clamp(0.75rem, 2vw, 1.5rem); /* img title/alternate text needed */
 }
 
 

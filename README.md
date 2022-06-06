@@ -14,3 +14,5 @@ Update 03 - Navbar and footer groundwork. Added fonts.
 Update 04 - Homepage base made. Footer adjustments made.
 
 Update 05 - Added more CSS to the homepage. Added CSS groupings in notes.
+
+Update 06 - Laid HTML groundwork for the rest of the pages, minor new CSS and changes.
