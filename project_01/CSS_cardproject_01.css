@@ -957,9 +957,14 @@ footer p {
 	}
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
 	.text_deepocean {
 		grid-area: 5 / 2 / span 6 / span 8;
+	}
+
+	.text_moon {
+		grid-area: 2 / 1 / span 8 / span 10;
+		width: 70%;
 	}
 }
 

@@ -16,6 +16,45 @@ main {
     margin-bottom: 3rem;
 }
 
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+h3 {
+    font-family: 'objektiv-mk1', sans-serif;
+    font-weight: 500;
+    font-style: normal;     
+}
+
+p {
+    font-family: 'objektiv-mk1', sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.outer-container {
+    margin: 3rem auto 0 auto;
+	padding-top: 1rem;
+	width: min(95%, 120rem);
+}
+
+.inner-container {
+    margin: 5rem auto 2rem auto;
+	padding-top: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* Navigation */
 
@@ -42,7 +81,7 @@ nav > a {
 }
 
 .nav-active {
-    text-decoration: underline var(--key-color);
+    border-bottom: 0.25em solid var(--key-color);
 }
 
 
@@ -70,7 +109,7 @@ nav > a {
 }
 
 .link-title-art {
-    margin-left: clamp(1rem, 2vw, 3rem);
+    margin-left: clamp(2rem, 3vw, 4rem);
     margin-right: clamp(1rem, 2vw, 3rem);
 }
 
@@ -106,6 +145,7 @@ nav > a {
     padding-right: min(95%, 2rem);
     padding-bottom: min(95%, 1rem);
     transform: translateX(-15%); /* img title/alternate text needed */
+    pointer-events: none;
 }
 
 .link-title-art:hover, .link-title-code:hover {
@@ -114,8 +154,8 @@ nav > a {
 
 
 /* Art page */
-/* img title/alternate text needed */
-
+/* img title/alternate text needed
+.art-container > img {} */
 
 /* Code page */
 
@@ -125,6 +165,11 @@ nav > a {
 
 .icon-large {
     width: 4rem;
+}
+
+.icon-box-large {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
