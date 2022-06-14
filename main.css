@@ -1,6 +1,7 @@
 :root {
     --main-color: #000;
     --key-color: #f21439;
+    --key-color-transparency: rgba(242, 20, 57, 0.5);
     --secondary-color: #fff;
     --element-transparency: rgba(255, 255, 255, 0.9);
 }
@@ -64,6 +65,12 @@ nav {
     margin-top: 2rem;
     margin-bottom: 2rem;
     justify-content: center;
+    /* gap: 2.8rem; */
+}
+
+.menu-parts {
+    display: flex;
+    justify-content: center;
     gap: 2.8rem;
 }
 
@@ -71,7 +78,7 @@ a {
     text-decoration: none;
 }
 
-nav > a {
+.menu-parts > a {
     color: var(--main-color);
     font-family: 'Arimo', sans-serif;
     font-weight: 500;
@@ -86,6 +93,11 @@ nav > a {
 
 
 /* Home page */
+
+.outer-container-index {
+    margin: 1rem auto 0 auto;
+	width: min(95%, 120rem);
+}
 
 .grid-template {
     display: grid;
@@ -124,6 +136,7 @@ nav > a {
     font-style: normal;
     font-size: clamp(5rem, 10vw, 12rem);
     text-transform: uppercase;
+    z-index: 2;
 }
 
 .title-ampersand {
@@ -134,6 +147,7 @@ nav > a {
     font-size: clamp(3rem, 10vw, 8.5rem);
     margin-right: clamp(1rem, 3vw, 5rem);
     margin-left: clamp(1rem, 8vw, 15rem);
+    z-index: 2;
 }
 
 .creature-art {
@@ -199,9 +213,7 @@ footer {
 
 /* Media queries */
 
-@media screen and (max-width: 720px) {
-    /* nav bar hide, hamburger menu appear*/
-}
+
 
 
 /*Font ref:

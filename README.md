@@ -18,3 +18,5 @@ Update 05 - Added more CSS to the homepage. Added CSS groupings in notes.
 Update 06 - Laid HTML groundwork for the rest of the pages, minor new CSS and changes.
 
 Update 07 - HTML and CSS layout progress continuation. More fonts added. Fixed a project problem.
+
+Update 08 - Small menu update.
