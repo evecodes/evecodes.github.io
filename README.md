@@ -20,3 +20,5 @@ Update 06 - Laid HTML groundwork for the rest of the pages, minor new CSS and ch
 Update 07 - HTML and CSS layout progress continuation. More fonts added. Fixed a project problem.
 
 Update 08 - Small menu update.
+
+Update 09 - Organizing elements, bringing structure to the pages.
