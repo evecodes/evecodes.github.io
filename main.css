@@ -201,6 +201,7 @@ a {
 .art-container > li {
     height: 40vh;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .portfolio-art {
