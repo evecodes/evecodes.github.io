@@ -24,3 +24,5 @@ Update 08 - Small menu update.
 Update 09 - Organizing elements, bringing structure to the pages.
 
 Update 10 - Basic structure to art page added.
+
+Update 11 - Added structure to the code page.

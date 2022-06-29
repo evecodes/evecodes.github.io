@@ -1,9 +1,20 @@
 :root {
     --main-color: #000;
+    --main-color-transparency: rgba(0, 0, 0, 0.35);
     --key-color: #f21439;
     --key-color-transparency: rgba(242, 20, 57, 0.5);
     --secondary-color: #fff;
     --element-transparency: rgba(255, 255, 255, 0.9);
+}
+
+::selection {
+    color: var(--secondary-color);
+    background-color: var(--key-color-transparency);
+}
+
+::-moz-selection {
+    color: var(--secondary-color);
+    background-color: var(--key-color-transparency);    
 }
 
 * {
@@ -12,7 +23,7 @@
     box-sizing: border-box;
     /* background: #000 !important;
     color: #0f0 !important;
-    outline: solid #f00 1px !important; */ /*= for testing*/
+    outline: solid #f00 1px !important; = for testing */
 }
 
 main {
@@ -69,6 +80,8 @@ p {
 .flex-horizontal {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -216,9 +229,46 @@ a {
 
 /* Code page */
 
-.temp-text-align {
-    text-align: right;
+.text-accent {
+    font-weight: bold;
 }
+
+.project-text {
+    margin: 2rem;
+    width: 40ch;
+}
+
+.project-text > a {
+    font-family: 'objektiv-mk1', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: auto;
+    margin-left: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--key-color);
+    padding: 0.3em 0.4em 0.3em 0.4em;
+    border-radius: 0.5em;
+    white-space: nowrap;
+}
+
+.project-text > a:hover {
+    box-shadow: 0 0 0.5em var(--key-color);
+}
+
+.project-about {
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.demo-preview {
+    box-shadow: 0 0 0.3rem var(--main-color-transparency);
+    width: 100%;
+    height: auto;
+    border-radius: 0.2rem;
+}
+
+/* To do - links in imgs */
 
 
 /* About/contact */
