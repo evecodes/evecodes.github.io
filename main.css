@@ -1,10 +1,11 @@
 :root {
-    --main-color: #000;
+    --main-color: rgb(0, 0, 0);
     --main-color-transparency: rgba(0, 0, 0, 0.35);
     --key-color: #f21439;
     --key-color-transparency: rgba(242, 20, 57, 0.5);
     --secondary-color: #fff;
     --element-transparency: rgba(255, 255, 255, 0.9);
+    --element-transparency-key: rgba(242, 20, 57, 0.9);
 }
 
 ::selection {
@@ -39,19 +40,22 @@ h2 {
     font-style: normal;
     text-transform: uppercase;
     font-size: clamp(1.25rem, 3vw, 1.75rem);
+    color: var(--main-color);
 }
 
 h3 {
     font-family: 'objektiv-mk1', sans-serif;
     font-weight: 500;
     font-style: normal;
-    margin-bottom: 1.2rem;     
+    margin-bottom: 1.2rem;  
+    color: var(--main-color);   
 }
 
 p {
     font-family: 'objektiv-mk1', sans-serif;
     font-weight: 400;
-    font-style: normal;  
+    font-style: normal;
+    color: var(--main-color);  
 }
 
 .outer-container {
@@ -229,6 +233,29 @@ a {
 
 /* Code page */
 
+.setup-relative {
+    position: relative;
+}
+
+.setup-absolute {
+    position: absolute;
+}
+/* move to main elements (?) */
+
+.overlay-demo {
+    display: inline-block;
+    top: 50%;
+    height: 10%;
+    width: 100%;
+    background-color: var(--element-transparency-key);
+}
+
+.overlay-demo > p {
+    /* padding-top: 0.45rem; */
+    color: var(--secondary-color);
+    text-align: center;
+}
+
 .text-accent {
     font-weight: bold;
 }
@@ -244,17 +271,30 @@ a {
     font-style: normal;
     font-size: 0.85rem;
     text-align: center;
-    margin-top: auto;
-    margin-left: 1rem;
-    color: var(--secondary-color);
-    background-color: var(--key-color);
+    margin-bottom: 0.75rem;
+    margin-left: 1rem;    
+    border: 0.1rem solid var(--key-color);
+    color: var(--main-color);
     padding: 0.3em 0.4em 0.3em 0.4em;
     border-radius: 0.5em;
     white-space: nowrap;
+    display: inline-block;
 }
 
-.project-text > a:hover {
-    box-shadow: 0 0 0.5em var(--key-color);
+@media (hover: hover) {
+    .project-text > a:hover {
+        color: var(--secondary-color);
+        background-color: var(--key-color);
+        box-shadow: 0 0.2rem 0.2em var(--key-color-transparency);
+    }
+}
+
+@media (hover: none) {
+    .project-text > a {
+        color: var(--secondary-color);
+        background-color: var(--key-color);
+        /* box-shadow: 0 0.2rem 0.2em var(--key-color-transparency); */
+    }
 }
 
 .project-about {
