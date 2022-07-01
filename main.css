@@ -244,16 +244,17 @@ a {
 
 .overlay-demo {
     display: inline-block;
-    top: 50%;
-    height: 10%;
-    width: 100%;
-    background-color: var(--element-transparency-key);
+    top: 45%;
+    /* height: 100%; */
+    width: 100%;    
 }
 
 .overlay-demo > p {
     /* padding-top: 0.45rem; */
     color: var(--secondary-color);
     text-align: center;
+    background-color: var(--element-transparency-key);
+    line-height: 3;
 }
 
 .text-accent {
