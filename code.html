@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <script src="" defer></script>
+    <script src="main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/htp3rog.css">
     <title>Portfolio Website</title>
@@ -21,30 +21,30 @@
     </nav>
     <main>
         <div class="outer-container">
-            <h2>Code projects</h2> <!--placeholder setup // img title/alternate text needed-->
+            <h2>Code projects</h2>
             <div class="inner-container flex-horizontal">
                 <a href="project_01/CSS_cardproject_01.html" target="_blank" rel="noopener noreferrer">
                     <div class="setup-relative">
-                        <div class="setup-absolute overlay-demo">
-                            <p>Open demo</p>
+                        <div class="setup-absolute overlay-demo overlay-hover">
+                            <p class="overlay-label setup-absolute">Open demo</p>
                         </div>
-                        <img src="icon_img/Demo_preview_01_small.png" class="demo-preview">
+                        <img src="icon_img/Demo_preview_01_small.png" alt="Demo preview CSS art." class="demo-preview">
                     </div>
                 </a>                
                 <div class="project-text">
                     <p class="project-about">A CSS art project. Design first made in Adobe Illustrator, then coded it. Made with <span class="text-accent">HTML</span> and <span class="text-accent">CSS</span>.   
                     </p>
-                    <a href="project_01/CSS_cardproject_01.html" target="_blank" rel="noopener noreferrer">Open demo</a>
+                    <a href="project_01/CSS_cardproject_01.html" target="_blank" rel="noopener noreferrer" class="test">Open demo</a>
                     <a href="https://github.com/evecodes/CSS-CardProject" target="_blank" rel="noopener noreferrer">View code on GitHub</a>
                 </div>
             </div>
             <div class="inner-container flex-horizontal">
                 <a href="project_02/JS_DOM_practice.html" target="_blank" rel="noopener noreferrer">
                     <div class="setup-relative">
-                        <div class="setup-absolute overlay-demo">
-                            <p>Open demo</p>
+                        <div class="setup-absolute overlay-demo overlay-hover">
+                            <p class="overlay-label setup-absolute">Open demo</p>
                         </div>
-                        <img src="icon_img/Demo_preview_02_small.png" class="demo-preview">
+                        <img src="icon_img/Demo_preview_02_small.png" alt="Demo preview JS DOM practice." class="demo-preview">
                     </div>
                 </a>
                 <div class="project-text">
@@ -56,10 +56,10 @@
             <div class="inner-container flex-horizontal">
                 <a>
                     <div class="setup-relative">
-                        <div class="setup-absolute overlay-demo">
-                            <p>You are here</p>
+                        <div class="setup-absolute overlay-demo overlay-hover">
+                            <p class="overlay-label setup-absolute">You are here</p>
                         </div>
-                        <img src="icon_img/Demo_preview_03_small.png" class="demo-preview">
+                        <img src="icon_img/Demo_preview_03_small.png" alt="Demo preview portfolio website." class="demo-preview">
                     </div>
                 </a>
                 <div class="project-text">
@@ -74,10 +74,10 @@
         <div class="icon-box">
             <p>This website is a work in progress</p>
             <a href="https://github.com/evecodes" target="_blank" rel="noopener noreferrer">
-                <img src="icon_external/Icon_GitHub_small.svg" class="icon-small">
+                <img src="icon_external/Icon_GitHub_small.svg" alt="The GitHub icon." class="icon-small">
             </a>
             <a href="https://www.artstation.com/creationsofeve" target="_blank" rel="noopener noreferrer">
-                <img src="icon_external/Icon_Artstation_small.svg" class="icon-small">
+                <img src="icon_external/Icon_Artstation_small.svg" alt="The Artstation icon." class="icon-small">
             </a>
         </div>
     </footer>

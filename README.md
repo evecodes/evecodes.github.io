@@ -28,3 +28,5 @@ Update 10 - Basic structure to art page added.
 Update 11 - Added structure to the code page.
 
 Update 12 - More code page structure added, plus minor fixes.
+
+Update 13 - Refined structure and interaction code and art pages, plus minor fixes.
