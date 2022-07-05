@@ -23,9 +23,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: #000 !important;
+    background: #000 !important;
     color: #0f0 !important;
-    outline: solid #f00 1px !important; = for testing */
+    outline: solid #f00 1px !important;
 }
 
 main {
@@ -366,7 +366,7 @@ footer {
 }
 
 .icon-small {
-    width: clamp(0.75rem, 2vw, 1.5rem); /* img title/alternate text needed */
+    width: clamp(0.75rem, 2vw, 1.5rem);
 }
 
 
