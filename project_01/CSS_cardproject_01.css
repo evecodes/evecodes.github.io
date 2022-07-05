@@ -52,7 +52,6 @@ p {
 	font-family: objektiv-mk1, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 0.75rem;
 }
 
 .collection_intro {
@@ -102,7 +101,8 @@ p {
 }
 
 .text_pyramid {
-	grid-area: 1 / 1 / span 5 / span 4;
+	grid-area: 1 / 1 / span 6 / span 10;
+	width: 40%;
 	margin-top: 1.75rem;
 	margin-left: 1rem;
 	z-index: 5;
@@ -150,7 +150,8 @@ p {
 }
 
 .text_hagfish {
-	grid-area: 2 / 2 / span 6 / span 4;
+	grid-area: 2 / 2 / span 6 / span 10;
+	width: 50%;
 	z-index: 5;
 	color: #bffff4;
 }
