@@ -366,7 +366,7 @@ footer {
 }
 
 .icon-small {
-    width: clamp(0.75rem, 2vw, 1.5rem);
+    width: clamp(0.75rem, 2vw, 1.5rem); /*change needed*/
 }
 
 
