@@ -491,7 +491,8 @@ p {
 }
 
 .text_komodo_dragon {
-	grid-area: 1 / 1 / span 5 / span 9;
+	grid-area: 1 / 1 / span 6 / span 10;
+	width: 90%;
 	margin-top: 1rem;
 	margin-left: 1rem;
 	z-index: 5;
@@ -638,7 +639,11 @@ p {
 }
 
 .text_deepocean {
-	grid-area: 5 / 3 / span 4 / span 6;
+	grid-area: 1 / 1 / span 6 / span 10;
+	justify-self: center;
+	align-self: end;
+	width: 60%;
+	margin-bottom: 1.25rem;
 	text-align: center;
 	z-index: 1;
 	color: #b9c0ed;
@@ -663,7 +668,9 @@ p {
 }
 
 .text_oldtree {
-	grid-area: 3 / 1 / span 4 / span 4;
+	grid-area: 1 / 1 / span 6 / span 10;
+	align-self: center;
+	width: 45%;
 	margin-left: 1rem;
 	z-index: 5;
 	color: #fff;
@@ -852,7 +859,9 @@ p {
 }
 
 .text_raremineral {
-	grid-area: 1 / 3 / span 3 / span 6;
+	grid-area: 1 / 1 / span 6 / span 10;
+	width: 60%;
+	justify-self: center;
 	z-index: 5;
 	margin-top: 1.5rem;
 	text-align: center;
@@ -960,19 +969,8 @@ footer p {
 }
 
 @media screen and (max-width: 25em) {
-	.text_deepocean {
-		grid-area: 5 / 2 / span 6 / span 8;
-	}
-
 	.text_moon {
-		grid-area: 2 / 1 / span 8 / span 10;
 		width: 70%;
-	}
-}
-
-@media screen and (max-width: 51.25em) {
-	.text_oldtree {
-		grid-area: 3 / 1 / span 4 / span 5;
 	}
 }
 
