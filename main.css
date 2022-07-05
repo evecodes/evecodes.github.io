@@ -77,10 +77,12 @@ p {
     padding-top: 1rem;
 } */
 
-.flex-center {
-    display: flex;
-    flex-direction: column;
+.flex-vertical {
+    display: flex;    
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .flex-horizontal {
