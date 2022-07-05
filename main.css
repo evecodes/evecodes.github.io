@@ -71,11 +71,11 @@ p {
 	/* padding-top: 1rem; */
 }
 
-.inner-container-narrow {
+/* .inner-container-narrow {
     width: min(95%, 35em);
     margin: 5rem auto 2rem auto;
     padding-top: 1rem;
-}
+} */
 
 .flex-center {
     display: flex;
@@ -323,18 +323,25 @@ a {
     .overlay-hover {
         opacity: 1;
     }
-}
 
-/* .test {
+    /* .test {
     display: none;
     visibility: hidden;
-} Button hide? */
+    } Button hide? */
+}
+
 
 
 /* About/contact */
 
-.inner-container-narrow > p, .inner-container-narrow > a {
+/* .inner-container-narrow > p, .inner-container-narrow > a {
     text-align: center;
+} */
+
+.about-text {
+    text-align: center;
+    width: 50ch;
+    margin-bottom: 2rem;
 }
 
 .icon-large {
