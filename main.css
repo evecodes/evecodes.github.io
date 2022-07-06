@@ -109,7 +109,7 @@ p {
 }
 
 
-/* Navigation */
+/* ---Navigation--- */
 
 nav {
     background-color: var(--element-transparency);
@@ -144,7 +144,7 @@ a {
 }
 
 
-/* Home page */
+/* ---Home page--- */
 
 .outer-container-index {
     margin: 1rem auto 0 auto;
@@ -219,7 +219,7 @@ a {
 }
 
 
-/* Art page */
+/* ---Art page--- */
 
 .art-container {
     display: flex;
@@ -247,7 +247,7 @@ a {
 }
 
 
-/* Code page */
+/* ---Code page--- */
 
 .overlay-demo {
     height: 100%;
@@ -342,7 +342,7 @@ a {
 
 
 
-/* About/contact */
+/* ---About/contact--- */
 
 /* .inner-container-narrow > p, .inner-container-narrow > a {
     text-align: center;
@@ -367,7 +367,7 @@ a {
 } */
 
 
-/* Footer  */
+/* ---Footer---  */
 
 footer {
     position: fixed;
@@ -391,7 +391,7 @@ footer {
 }
 
 
-/* Media queries */
+/* ---Media queries--- */
 
 
 
