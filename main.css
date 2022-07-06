@@ -59,10 +59,6 @@ p {
     font-style: normal;
     font-size: 1rem;
     color: var(--main-color);
-    /* -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;   */
 }
 
 .text-larger-title {
@@ -352,7 +348,7 @@ a {
     text-align: center;
 } */
 
-.about-text {
+.narrow-box {
     text-align: center;
     max-width: 50ch;
     width: 100%;
@@ -365,10 +361,10 @@ a {
     max-height: 4rem;
 }
 
-.icon-box-large {
+/* .icon-box-large {
     padding: 0.2rem;
     width: 100%;
-}
+} */
 
 
 /* Footer  */
