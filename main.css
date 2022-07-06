@@ -58,7 +58,11 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
-    color: var(--main-color);  
+    color: var(--main-color);
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;  
 }
 
 .text-larger-title {
