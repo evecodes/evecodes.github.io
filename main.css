@@ -44,20 +44,27 @@ h2 {
     color: var(--main-color);
 }
 
-h3 {
+/* h3 {
     font-family: 'objektiv-mk1', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.2em;
     margin-bottom: 1.2rem;  
     color: var(--main-color);   
-}
+} */
 
 p {
     font-family: 'objektiv-mk1', sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1rem;
     color: var(--main-color);  
+}
+
+.text-larger-title {
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .outer-container {
@@ -342,7 +349,7 @@ a {
 
 .about-text {
     text-align: center;
-    width: 50ch;
+    max-width: 50ch;
     margin-bottom: 2rem;
 }
 
@@ -351,7 +358,7 @@ a {
 }
 
 .icon-box-large {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     margin-bottom: 2rem;
 }
 
