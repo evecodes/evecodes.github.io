@@ -355,6 +355,7 @@ a {
 .about-text {
     text-align: center;
     max-width: 50ch;
+    width: 100%;
     margin-bottom: 2rem;
     padding: 0.1rem;
 }
@@ -366,6 +367,7 @@ a {
 
 .icon-box-large {
     padding: 0.2rem;
+    width: 100%;
 }
 
 
