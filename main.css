@@ -1,6 +1,7 @@
 :root {
     --main-color: rgb(0, 0, 0);
-    --main-color-transparency: rgba(0, 0, 0, 0.35);
+    --main-color-semitone: rgba(0, 0, 0, 0.35);
+    --main-color-halftone: rgba(0, 0, 0, 0.5);
     --key-color: #f21439;
     --key-color-transparency: rgba(242, 20, 57, 0.5);
     --secondary-color: #fff;
@@ -111,6 +112,7 @@ p {
 
 .setup-absolute {
     position: absolute;
+    inset: 0 0 0 0;
 }
 
 
@@ -123,6 +125,11 @@ nav {
     margin-bottom: 2rem;
     justify-content: center;
     /* gap: 2.8rem; */
+}
+
+.nav-bar {
+    visibility: hidden;
+    /* display: none; */
 }
 
 .menu-parts {
@@ -249,7 +256,6 @@ a {
 .art-container {
     display: flex;
     flex-wrap: wrap;
-    object-fit: cover;
     list-style: none;
     align-content: space-around;
     gap: 2rem;
@@ -267,7 +273,6 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    vertical-align: bottom;
     cursor: pointer;
 }
 
@@ -275,21 +280,24 @@ a {
 /* ---Code page--- */
 
 .overlay-demo {
-    height: 100%;
-    width: 100%;      
+    height: 100%; /*Check IMG size*/
+    /* width: 100%; */
+    border-radius: 0.2rem;  
+    overflow: hidden;    
 }
 
 .overlay-demo:hover {
     cursor: pointer;
-    background-color: var(--element-transparency-semitone);
+    background-color: rgba(0, 0, 0, 0.65);
+    transition: background-color 100ms ease-out;
 }
 
 .overlay-label {
     width: 100%;
-    top: 45%;
+    top: 43%;
     color: var(--secondary-color);
     text-align: center;
-    background-color: var(--element-transparency-key);
+    /* background-color: var(--element-transparency-key); */
     line-height: 3;
 }
 
@@ -302,7 +310,7 @@ a {
 }
 
 .demo-preview {
-    box-shadow: 0 0 0.3rem var(--main-color-transparency);
+    box-shadow: 0 0 0.3rem var(--main-color-semitone);
     width: 100%;
     height: auto;
     border-radius: 0.2rem;
@@ -317,7 +325,7 @@ a {
     width: 40ch;
 }
 
-.project-text > a {
+.active-button {
     font-family: 'objektiv-mk1', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -325,8 +333,25 @@ a {
     text-align: center;
     margin-bottom: 0.75rem;
     margin-left: 1rem;    
+    background-color: var(--key-color);
+    color: var(--secondary-color);
+    padding: 0.3em 0.4em 0.3em 0.4em;
+    border-radius: 0.5em;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.non-active-button {
+    font-family: 'objektiv-mk1', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    margin-left: 1rem;
     border: 0.1rem solid var(--key-color);
     color: var(--main-color);
+    background-color: var(--secondary-color);
     padding: 0.3em 0.4em 0.3em 0.4em;
     border-radius: 0.5em;
     white-space: nowrap;
@@ -340,10 +365,6 @@ a {
 
 /* ---About/contact--- */
 
-/* .inner-container-narrow > p, .inner-container-narrow > a {
-    text-align: center;
-} */
-
 .narrow-box {
     text-align: center;
     max-width: 50ch;
@@ -356,11 +377,6 @@ a {
     width: 4rem;
     max-height: 4rem;
 }
-
-/* .icon-box-large {
-    padding: 0.2rem;
-    width: 100%;
-} */
 
 
 /* ---Footer---  */
@@ -389,7 +405,47 @@ footer {
 
 /* ---Media queries--- */
 
+/*Hover and no hover devices queries*/
+@media (hover: hover) {
+    .active-button:hover {
+        color: var(--secondary-color);
+        background-color: var(--key-color);
+        box-shadow: 0 0.2rem 0.2em var(--key-color-transparency);
+        transition: box-shadow 100ms ease-out;
+    }
+}
+
+@media (hover: none) {
+    .overlay-demo {
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    .overlay-hover {
+        opacity: 1;
+    }
+
+    .menu-parts {
+        background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    .menu-parts > a {
+        color: var(--secondary-color);
+        background-color: var(--key-color);
+        border: 1px solid var(--key-color);
+    }
+}
+
+
+/*Screen size queries*/
 @media (max-width: 35em) {
+    .nav-bar {
+        background: var(--element-transparency);
+        z-index: 99;
+        height: 3.5rem;
+        position: fixed;
+        visibility: visible;
+    }
+
     .menu-parts {
         position: fixed;
         flex-direction: column;
@@ -403,7 +459,7 @@ footer {
 
     .hamburger-menu {
         position: fixed;
-        top: 3%;
+        top: 0.75rem;
         right: 6%;
         transform: translate(5%, 20%);
         cursor: pointer;
@@ -420,7 +476,7 @@ footer {
         z-index: 2;
     } OLD OLD*/
         
-    /* NEW STRIPE BURG*/
+    /* NEW STRIPE BURGER MENU*/
     .hamburger-stripe {
         width: 2rem;
         height: 3px;
@@ -456,7 +512,7 @@ footer {
         height: 3px;
         position: relative;
         display: inline-block;
-        transform: rotate(90deg);
+        /* transform: rotate(90deg); */
         z-index: 2;
     }
     
@@ -482,7 +538,6 @@ footer {
         transform: rotate(45deg);
     }
 
-    /*JS toggle class*/
     .menu-active {
         transform: translateX(0%);
     }
@@ -513,48 +568,27 @@ footer {
     }
 }
 
-@media (hover: hover) {
-    .project-text > a:hover {
-        color: var(--secondary-color);
-        background-color: var(--key-color);
-        box-shadow: 0 0.2rem 0.2em var(--key-color-transparency);
+@media (max-width: 28em) {
+    .project-text {
+        margin: 1rem 0 2rem 0;
+    }
+
+    .project-about {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .active-button {
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    .non-active-button {
+        margin-left: 0;
+        margin-right: 1rem;        
     }
 }
 
-@media (hover: none) {
-    /* .project-text > a {
-        color: var(--secondary-color);
-        background-color: var(--key-color);
-    } */
-
-    .overlay-demo {
-        background-color: var(--element-transparency-semitone);
-    }
-
-    .overlay-hover {
-        opacity: 1;
-    }
-
-    .menu-parts {
-        background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 100%);
-    }
-
-    .menu-parts > a {
-        color: var(--secondary-color);
-        background-color: var(--key-color);
-        border: 1px solid var(--key-color);
-    }
-
-
-
-
-
-    /* .test {
-    display: none;
-    visibility: hidden;
-    } Button hide? */
-}
-
+/* media query width <310px*/
 
 
 

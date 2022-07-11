@@ -32,3 +32,5 @@ Update 12 - More code page structure added, plus minor fixes.
 Update 13 - Refined structure and interaction code and art pages, plus minor fixes.
 
 Update 14 - Base mobile menu made.
+
+Update 15 - Refined mobile menu and structure.
