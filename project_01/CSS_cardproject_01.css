@@ -968,10 +968,34 @@ footer p {
 	}
 }
 
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 28em) {
 	.text_moon {
 		width: 70%;
 	}
+}
+
+
+@media screen and (max-width: 25em) {
+	.text_moon {
+		width: 90%;
+	}
+
+	.text_raremineral {
+		width: 90%;
+	}
+
+	.tree_branch_one {
+		margin-left: 1.8rem;		
+	}
+
+	.tree_branch_three {		
+		margin-left: 3rem;		
+	}
+
+	.tree_branch_four {
+		margin-top: 4,5rem;	
+		margin-right: 1rem;	
+	}	
 }
 
 /*To remember fonts: Odor Mean Chey (Google fonts), Odibee Sans (Google fonts)*/
