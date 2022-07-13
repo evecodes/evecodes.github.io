@@ -68,6 +68,7 @@ p {
 }
 
 .text-larger-title {
+    color: rgba(128, 128, 128, 1); /*in root colours*/
     margin-bottom: 1.2rem;
     font-weight: 500;
     font-size: 1.2rem;
@@ -335,6 +336,7 @@ a {
     margin-left: 1rem;    
     background-color: var(--key-color);
     color: var(--secondary-color);
+    border: 0.1rem solid var(--key-color);
     padding: 0.3em 0.4em 0.3em 0.4em;
     border-radius: 0.5em;
     white-space: nowrap;
@@ -357,6 +359,8 @@ a {
     white-space: nowrap;
     display: inline-block;
 }
+
+/*buttons wide? space even?*/
 
 .project-about {
     margin: 1rem 1rem 1rem 1rem;
@@ -437,7 +441,7 @@ footer {
 
 
 /*Screen size queries*/
-@media (max-width: 35em) {
+@media (orientation: portrait) and (max-width: 35em) {
     .nav-bar {
         background: var(--element-transparency);
         z-index: 99;
@@ -577,7 +581,7 @@ footer {
         margin: 1rem 0 1rem 0;
     }
 
-    .active-button {
+    .active-button {               
         margin-left: 0;
         margin-right: 1rem;
     }
@@ -588,7 +592,31 @@ footer {
     }
 }
 
+@media (max-width: 20em) {
+    p {
+        font-size: clamp(0.75rem, 0.85rem, 1rem);
+    }
+
+    .active-button, .non-active-button {
+        font-size: clamp(0.65rem, 0.75rem, 1rem);
+    }
+
+    .active-button {
+        margin-right: 0.75rem;
+    }
+
+    .non-active-button {
+        margin-right: 0.75rem;
+    }
+
+    .project-about {
+        margin-top: 0.5rem;
+    }
+}
+
 /* media query width <310px*/
+
+/*to fix: media query horz menu colours*/
 
 
 
