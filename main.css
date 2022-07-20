@@ -280,11 +280,17 @@ a {
 
 /* ---Code page--- */
 
+.demo-box {
+    /* display: inline-block; */
+    height: auto;
+    max-height: 375px;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem var(--main-color-semitone);
+}
+
 .overlay-demo {
-    height: 100%; /*Check IMG size*/
-    /* width: 100%; */
-    border-radius: 0.2rem;  
-    overflow: hidden;    
+    width: auto;
 }
 
 .overlay-demo:hover {
@@ -311,10 +317,7 @@ a {
 }
 
 .demo-preview {
-    box-shadow: 0 0 0.3rem var(--main-color-semitone);
     width: 100%;
-    height: auto;
-    border-radius: 0.2rem;
 }
 
 .text-accent {
