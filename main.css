@@ -157,26 +157,6 @@ a {
 }
 
 
-
-/*JS toggle class*/
-
-/* 
-
-0.35rem = 5,6px;
-
-.stripe-active:nth-child(1)[data-visible="true"] {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.stripe-active:nth-child(2)[data-visible="true"] {
-    visibility: hidden;   
-}
-
-.stripe-active:nth-child(3)[data-visible="true"] {
-    transform: translateY(-9px) rotate(-45deg);    
-} */
-
-
 /* ---Home page--- */
 
 .outer-container-index {
@@ -280,13 +260,15 @@ a {
 
 /* ---Code page--- */
 
-.demo-box {
-    /* display: inline-block; */
+.demo-box {    
+    width: auto;
     height: auto;
+    max-width: 550px;
     max-height: 375px;
     border-radius: 0.2rem;
     overflow: hidden;
     box-shadow: 0 0 0.3rem var(--main-color-semitone);
+    /* border:rgba(242, 20, 57, 0.9) solid 3px; */
 }
 
 .overlay-demo {
@@ -316,8 +298,10 @@ a {
     opacity: 1;
 }
 
-.demo-preview {
-    width: 100%;
+.demo-preview {    
+    display: block;
+    max-width: 100%;
+    height: 100%;
 }
 
 .text-accent {
@@ -595,7 +579,7 @@ footer {
     }
 }
 
-@media (max-width: 20em) {
+@media (max-width: 22em) {
     p {
         font-size: clamp(0.75rem, 0.85rem, 1rem);
     }
@@ -617,7 +601,6 @@ footer {
     }
 }
 
-/* media query width <310px*/
 
 /*to fix: media query horz menu colours*/
 
