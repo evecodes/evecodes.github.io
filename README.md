@@ -34,3 +34,5 @@ Update 13 - Refined structure and interaction code and art pages, plus minor fix
 Update 14 - Base mobile menu made.
 
 Update 15 - Refined mobile menu and structure.
+
+Update 16 - Added art standout interaction and some minor name changes.

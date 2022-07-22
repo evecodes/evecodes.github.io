@@ -2,25 +2,25 @@
     --main-color: rgb(0, 0, 0);
     --main-color-35percent: rgba(0, 0, 0, 0.35);
     --main-color-50percent: rgba(0, 0, 0, 0.5);
-    --main-color-80percent: rgba(0, 0, 0, 0.8);
+    --main-color-90percent: rgba(0, 0, 0, 0.9);
     --key-color: #f21439;
-    --key-color-transparency: rgba(242, 20, 57, 0.5);
+    --key-color-50percent: rgba(242, 20, 57, 0.5);
+    --key-color-90percent: rgba(242, 20, 57, 0.9);
     --secondary-color: #fff;
+    --secondary-color-25percent: rgba(255, 255, 255, 0.25);
+    --secondary-color-90percent: rgba(255, 255, 255, 0.9);    
     --tertiary-color: rgba(128, 128, 128, 1);
-    --element-transparency-90percent: rgba(255, 255, 255, 0.9);
-    --element-transparency-25percent: rgba(255, 255, 255, 0.25);
-    --element-transparency-key: rgba(242, 20, 57, 0.9);
     /*gradient root item*/
 }
 
 ::selection {
     color: var(--secondary-color);
-    background-color: var(--key-color-transparency);
+    background-color: var(--key-color-50percent);
 }
 
 ::-moz-selection {
     color: var(--secondary-color);
-    background-color: var(--key-color-transparency);    
+    background-color: var(--key-color-50percent);    
 }
 
 * {
@@ -116,11 +116,15 @@ p {
     inset: 0 0 0 0;
 }
 
+.opacity-zero {
+    opacity: 0;
+}
+
 
 /* ---Navigation--- */
 
 nav {
-    background-color: var(--element-transparency-90percent);
+    background-color: var(--secondary-color-90percent);
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -281,8 +285,53 @@ a {
 .bg-tint-dark {
     position: fixed;
     inset: 0 0 0 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--main-color-90percent);
     z-index: 100;
+}
+
+/* Close X btn */
+.standout-close-btn {
+    cursor: pointer;
+    top: 4rem;
+    right: 4%;
+    width: 2rem;
+    height: 3px;
+    position: fixed;
+    display: inline-block;    
+    z-index: 102;
+}
+
+.standout-close-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transform: rotate(-45deg);
+}
+
+.standout-close-btn:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2rem;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transform: rotate(45deg);
+}
+
+/* JS toggle classes */
+.hide-button {
+    visibility: hidden;
+    display: none;
+}
+
+.hide-standout {
+    visibility: hidden;
+    display: none;
 }
 
 /* .artwork-standout {
@@ -423,7 +472,7 @@ footer {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-top: auto;
-    background-color: var(--element-transparency-90percent);
+    background-color: var(--secondary-color-90percent);
 }
 
 .icon-box {
@@ -444,7 +493,7 @@ footer {
     .active-button:hover {
         color: var(--secondary-color);
         background-color: var(--key-color);
-        box-shadow: 0 0.2rem 0.2em var(--key-color-transparency);
+        box-shadow: 0 0.2rem 0.2em var(--key-color-50percent);
         transition: box-shadow 100ms ease-out;
     }
 }
@@ -473,7 +522,7 @@ footer {
 /*Screen size queries*/
 @media (orientation: portrait) and (max-width: 35em) {
     .nav-bar {
-        background: var(--element-transparency-90percent);
+        background: var(--secondary-color-90percent);
         z-index: 99;
         height: 3.5rem;
         position: fixed;
