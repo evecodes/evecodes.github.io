@@ -292,7 +292,7 @@ a {
 /* Close X btn */
 .standout-close-btn {
     cursor: pointer;
-    top: 4rem;
+    top: 6%;
     right: 4%;
     width: 2rem;
     height: 3px;
