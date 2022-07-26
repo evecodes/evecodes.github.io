@@ -11,6 +11,7 @@ hamburgerMenu.addEventListener('click', e => {
     navBar.classList.toggle('nav-bar');
 });
 
+/*Art page JS*/
 /*Art 1*/
 const standoutBtnOne = document.querySelector("#standout-btn-1");
 const standoutArtOne = document.querySelector("#standout-1");
