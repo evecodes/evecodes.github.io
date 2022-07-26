@@ -1,7 +1,7 @@
 :root {
     --main-color: rgb(0, 0, 0);
     --main-color-35percent: rgba(0, 0, 0, 0.35);
-    --main-color-50percent: rgba(0, 0, 0, 0.5);
+    --main-color-65percent: rgba(0, 0, 0, 0.65);
     --main-color-90percent: rgba(0, 0, 0, 0.9);
     --key-color: #f21439;
     --key-color-50percent: rgba(242, 20, 57, 0.5);
@@ -364,7 +364,7 @@ a {
 
 .overlay-demo:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: var(--main-color-65percent);
     transition: background-color 100ms ease-out;
 }
 
@@ -500,7 +500,7 @@ footer {
 
 @media (hover: none) {
     .overlay-demo {
-        background-color: rgba(0, 0, 0, 0.65);
+        background-color: var(--main-color-65percent);
     }
 
     .overlay-hover {
@@ -520,7 +520,7 @@ footer {
 
 
 /*Screen size queries*/
-@media (orientation: portrait) and (max-width: 35em) {
+@media screen and (max-width: 35em) and (orientation: portrait) {
     .nav-bar {
         background: var(--secondary-color-90percent);
         z-index: 99;
