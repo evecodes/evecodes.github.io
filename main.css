@@ -505,19 +505,8 @@ footer {
 
     .overlay-hover {
         opacity: 1;
-    }
-
-    .menu-parts {
-        background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 100%);
-    }
-
-    .menu-parts > a {
-        color: var(--secondary-color);
-        background-color: var(--key-color);
-        border: 1px solid var(--key-color);
-    }
+    }   
 }
-
 
 /*Screen size queries*/
 @media screen and (max-width: 35em) and (orientation: portrait) {
@@ -549,17 +538,8 @@ footer {
         display: inline-block;
         z-index: 100;
     }
-    
-    /* .hamburger-stripe {
-        width: 2rem;
-        height: 3px;
-        margin: 0.35rem auto;
-        background-color: var(--key-color);
-        display: block;
-        z-index: 2;
-    } OLD OLD*/
-        
-    /* NEW STRIPE BURGER MENU*/
+          
+    /*Burger Stripe Menu*/
     .hamburger-stripe {
         width: 2rem;
         height: 3px;
@@ -621,6 +601,7 @@ footer {
         transform: rotate(45deg);
     }
 
+    /*Active mobile menu*/
     .menu-active {
         transform: translateX(0%);
     }
@@ -652,6 +633,18 @@ footer {
 
     .padding-bottom {
         padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 35em) and (hover: none) {
+    .menu-parts {
+        background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    .menu-parts > a {
+        color: var(--secondary-color);
+        background-color: var(--key-color);
+        border: 1px solid var(--key-color);
     }
 }
 
@@ -696,9 +689,6 @@ footer {
         margin-top: 0.5rem;
     }
 }
-
-
-/*to fix: media query horz menu colours*/
 
 
 
