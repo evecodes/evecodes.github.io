@@ -47,7 +47,7 @@ if (standoutBtnTwo) {
         standoutBtnTwo.classList.toggle('hide-button');
         standoutArtTwo.classList.toggle('hide-standout');
     })
-}
+};
 
 /*Art 3*/
 const standoutBtnThree = document.querySelector("#standout-btn-3");
@@ -66,7 +66,7 @@ if (standoutBtnThree) {
         standoutBtnThree.classList.toggle('hide-button');
         standoutArtThree.classList.toggle('hide-standout');
     })
-}
+};
 
 /*Art 4*/
 const standoutBtnFour = document.querySelector("#standout-btn-4");
@@ -78,14 +78,14 @@ if (imageArtFour) {
         standoutBtnFour.classList.toggle('hide-button');
         standoutArtFour.classList.toggle('hide-standout');
     })
-}
+};
 
 if (standoutBtnFour) {
     standoutBtnFour.addEventListener('click', e => {
         standoutBtnFour.classList.toggle('hide-button');
         standoutArtFour.classList.toggle('hide-standout');
     })
-}
+};
 
 /*Art 5*/
 const standoutBtnFive = document.querySelector("#standout-btn-5");
