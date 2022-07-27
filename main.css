@@ -149,11 +149,11 @@ a {
 
 .menu-parts > a {
     color: var(--main-color);
-    font-family: 'Arimo', sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
     font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
-    font-size: clamp(0.75rem, 2vw, 1rem);
+    font-size: clamp(0.75rem, 2vw, 1.1rem);
 }
 
 .nav-active {
@@ -204,7 +204,7 @@ a {
 
 .link-title-art, .link-title-code {
     color: var(--key-color);
-    font-family: brandon-grotesque,sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: clamp(5rem, 10vw, 12rem);
@@ -215,7 +215,7 @@ a {
 
 .title-ampersand {
     color: var(--secondary-color);
-    font-family: brandon-grotesque,sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: clamp(3rem, 10vw, 8.5rem);
@@ -520,7 +520,7 @@ footer {
 }
 
 /*Screen size queries*/
-@media screen and (max-width: 35em) and (orientation: portrait) {
+@media screen and (max-width: 35em) {
     .nav-bar {
         background: var(--secondary-color-90percent);
         z-index: 99;
