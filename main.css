@@ -489,9 +489,14 @@ footer {
 }
 
 .icon-small {
-    width: clamp(0.75rem, 2vw, 1.5rem); /*change needed*/
+    width: min(max(1.1rem, 3vw), 1.5rem);
 }
 
+@supports (width: clamp(1.1rem, 3vw, 1.5rem)) {
+    .icon-small {
+        width: clamp(1.1rem, 3vw, 1.5rem);
+    }
+}
 
 /* ---Media queries--- */
 
@@ -644,6 +649,10 @@ footer {
 
     .padding-bottom {
         padding-bottom: 0;
+    }
+
+    .icon-small {
+        width: 1.1rem;
     }
 }
 
