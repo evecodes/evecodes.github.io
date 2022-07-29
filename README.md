@@ -36,3 +36,5 @@ Update 14 - Base mobile menu made.
 Update 15 - Refined mobile menu and structure.
 
 Update 16 - Added art standout interaction and some minor name changes.
+
+Update 17 - Added mobile version of the Home page.

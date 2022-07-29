@@ -36,10 +36,10 @@ body {
     overflow-x: hidden;
 }
 
-main {
+/* main {
     margin-top: clamp(0.2rem, 5vh, 25rem);
     margin-bottom: 3rem;
-}
+} */
 
 h2 {
     margin-bottom: 3rem;
@@ -52,21 +52,17 @@ h2 {
     color: var(--main-color);
 }
 
-/* h3 {
-    font-family: 'objektiv-mk1', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.2em;
-    margin-bottom: 1.2rem;  
-    color: var(--main-color);   
-} */
-
 p {
     font-family: 'objektiv-mk1', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
     color: var(--main-color);
+}
+
+.main-margin {
+    margin-top: clamp(0.2rem, 5vh, 25rem);
+    margin-bottom: 3rem;
 }
 
 .text-larger-title {
@@ -85,12 +81,6 @@ p {
     margin: 2rem auto 2rem auto;
 	/* padding-top: 1rem; */
 }
-
-/* .inner-container-narrow {
-    width: min(95%, 35em);
-    margin: 5rem auto 2rem auto;
-    padding-top: 1rem;
-} */
 
 .flex-vertical {
     display: flex;    
@@ -114,6 +104,11 @@ p {
 .setup-absolute {
     position: absolute;
     inset: 0 0 0 0;
+}
+
+.element-hidden {
+    display: none;
+    visibility: hidden;
 }
 
 .opacity-zero {
@@ -526,6 +521,7 @@ footer {
 
 /*Screen size queries*/
 @media screen and (max-width: 35em) {
+    /*Navigation*/
     .nav-bar {
         background: var(--secondary-color-90percent);
         z-index: 99;
@@ -651,6 +647,69 @@ footer {
         padding-bottom: 0;
     }
 
+    /*Home page*/  
+    .main-margin-mobile {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* .fullheight-mobile {        
+        min-height: 100vh;
+    } */
+    
+    .flex-vertical-mobile {
+        /* display: flex;    
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        align-content: space-around;
+    }
+    
+    .mobile-hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    .element-hidden {
+        display: block;
+        visibility: visible;
+    }
+    
+    .main-title {       
+        transform: translateY(0);
+    }
+
+    .link-title-art { 
+        margin: 0;
+        
+    }
+
+    .link-title-code { 
+        margin-left: 0;
+    }
+
+    .creature-box {
+        padding-top: 1rem;
+        margin: auto 1rem auto 1rem;
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .creature-mobile {
+        transform: translateY(0.75rem);
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    /*Footer*/
     .icon-small {
         width: 1.1rem;
     }
