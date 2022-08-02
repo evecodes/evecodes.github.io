@@ -652,11 +652,7 @@ footer {
         margin-top: 0;
         margin-bottom: 1rem;
     }
-
-    /* .fullheight-mobile {        
-        min-height: 100vh;
-    } */
-    
+        
     .flex-vertical-mobile {
         /* display: flex;    
         align-items: center;
@@ -696,6 +692,10 @@ footer {
         margin-bottom: 2rem;
     }
 
+    .link-title-art:hover, .link-title-code:hover {        
+        box-shadow: 0 -1.5rem 0 var(--main-color) inset;
+    }    
+
     .creature-box {
         padding-top: 1rem;
         margin: auto 2rem auto 2rem;
@@ -713,7 +713,6 @@ footer {
     .setup-absolute-mobile {
         position: absolute;
         inset: 0 0 0 0;
-        /* background-color: greenyellow; */
     }
 
     /*Footer*/
