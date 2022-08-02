@@ -710,7 +710,7 @@ footer {
         max-width: 100%;
     }
 
-    .absolute-inset {
+    .setup-absolute-mobile {
         position: absolute;
         inset: 0 0 0 0;
         /* background-color: greenyellow; */
