@@ -230,6 +230,7 @@ a {
 .link-title-art:hover, .link-title-code:hover {
     color: var(--main-color);
     box-shadow: 0 -1.8rem 0 var(--main-color) inset;
+    transition: box-shadow 100ms ease-out;
 }
 
 
@@ -526,6 +527,14 @@ footer {
         /* margin-left: 2rem;
         margin-right: 1rem; */
     }
+
+    .link-title-art, .link-title-code {
+        box-shadow: 0 -1rem 0 var(--key-color) inset;
+    }
+
+    .link-title-art:hover, .link-title-code:hover {        
+        box-shadow: 0 -1.2rem 0 var(--main-color) inset;
+    }
 }
 
 @media screen and (max-width: 35em) {
@@ -611,6 +620,7 @@ footer {
         height: 3px;
         background-color: var(--key-color);
         transform: rotate(-45deg);
+        transition: transform 100ms ease-out;
     }
     
     .stripe-active:after {
@@ -622,6 +632,7 @@ footer {
         height: 3px;
         background-color: var(--key-color);
         transform: rotate(45deg);
+        transition: transform 100ms ease-out;
     }
 
     /*Active mobile menu*/
@@ -638,6 +649,7 @@ footer {
     .menu-parts > a:hover {
         color: var(--secondary-color);
         background-color: var(--key-color);
+        transition: background-color 150ms ease-out;
     }
 
     .nav-active {
@@ -697,6 +709,10 @@ footer {
         margin-bottom: 2rem;
     }
 
+    .link-title-art, .link-title-code {
+        box-shadow: 0 -1.2rem 0 var(--key-color) inset;
+    }
+
     .link-title-art:hover, .link-title-code:hover {        
         box-shadow: 0 -1.5rem 0 var(--main-color) inset;
     } 
@@ -717,6 +733,7 @@ footer {
         transform: translateY(0.75rem);
         max-height: 100%;
         max-width: 100%;
+        pointer-events: none;
     }
 
     .setup-absolute-mobile {
