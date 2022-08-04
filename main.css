@@ -183,6 +183,10 @@ a {
     transform: translateY(-3rem);
 }
 
+.transform-translateX {
+    transform: translateX(-1rem);
+}
+
 .link-title-art {
     margin-left: clamp(2rem, 5vw, 4rem);
     margin-right: clamp(1rem, 2vw, 3rem);
@@ -425,8 +429,6 @@ a {
     display: inline-block;
 }
 
-/*buttons wide? space even?*/
-
 .project-about {
     margin: 1rem 1rem 1rem 1rem;
 }
@@ -482,6 +484,7 @@ footer {
     }
 }
 
+
 /* ---Media queries--- */
 
 /*Hover and no hover devices queries*/
@@ -495,6 +498,7 @@ footer {
 
     .menu-parts > a:hover {
         color: var(--key-color);
+        transition: color 100ms ease-out;
     }
 }
 
@@ -509,7 +513,7 @@ footer {
 }
 
 /*Screen size queries*/
-@media screen and (max-width: 44em) {
+@media screen and (max-width: 48em) {
     .menu-parts {
         gap: 2rem;
     }
@@ -518,12 +522,16 @@ footer {
         transform: translateY(-2rem);
     }
 
+    .transform-translateX {
+        transform: translateX(-1rem);
+    }
+
     .link-title-art, .link-title-code {
         font-size: 4rem;
     }
 
     .title-ampersand {
-        font-size: 3rem;
+        font-size: 3.5rem;
         /* margin-left: 2rem;
         margin-right: 1rem; */
     }
@@ -534,6 +542,12 @@ footer {
 
     .link-title-art:hover, .link-title-code:hover {        
         box-shadow: 0 -1.2rem 0 var(--main-color) inset;
+    }
+}
+
+@media screen and (max-width: 70em) {
+    .transform-translateX {
+        transform: translateX(-1.5rem);
     }
 }
 
@@ -670,7 +684,7 @@ footer {
         padding-bottom: 0;
     }
 
-    /*Home page*/  
+    /*Home page*/
     .main-margin-mobile {
         margin-top: 0;
         margin-bottom: 1rem;
@@ -697,6 +711,10 @@ footer {
     
     .main-title {       
         transform: translateY(0);
+    }
+    
+    .transform-translateX {
+        transform: translateX(0);
     }
 
     .link-title-art { 
@@ -814,23 +832,3 @@ footer {
         margin-top: 0.5rem;
     }
 }
-
-
-
-/*Font ref:
-
-font-family: 'Arimo', sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: objektiv-mk1,sans-serif;
-font-weight: 300;
-font-style: normal;
-
-font-family: brandon-grotesque,sans-serif;
-font-weight: 100;
-font-style: normal;
-
-font-family: brandon-grotesque,sans-serif;
-font-weight: 300;
-font-style: normal; */
