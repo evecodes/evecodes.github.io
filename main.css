@@ -513,6 +513,13 @@ footer {
 }
 
 /*Screen size queries*/
+
+@media screen and (max-width: 70em) {
+    .transform-translateX {
+        transform: translateX(-1.5rem);
+    }
+}
+
 @media screen and (max-width: 48em) {
     .menu-parts {
         gap: 2rem;
@@ -542,12 +549,6 @@ footer {
 
     .link-title-art:hover, .link-title-code:hover {        
         box-shadow: 0 -1.2rem 0 var(--main-color) inset;
-    }
-}
-
-@media screen and (max-width: 70em) {
-    .transform-translateX {
-        transform: translateX(-1.5rem);
     }
 }
 
@@ -727,7 +728,7 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .link-title-art, .link-title-code {
+    .link-title-art, .link-title-code {        
         box-shadow: 0 -1.2rem 0 var(--key-color) inset;
     }
 
