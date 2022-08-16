@@ -3,10 +3,10 @@
     --main-color-35percent: rgba(0, 0, 0, 0.35);
     --main-color-65percent: rgba(0, 0, 0, 0.65);
     --main-color-90percent: rgba(0, 0, 0, 0.9);
-    --key-color: #f21439;
+    --key-color: rgb(242, 20, 57);
     --key-color-50percent: rgba(242, 20, 57, 0.5);
     --key-color-90percent: rgba(242, 20, 57, 0.9);
-    --secondary-color: #fff;
+    --secondary-color: rgb(255, 255, 255);
     --secondary-color-25percent: rgba(255, 255, 255, 0.25);
     --secondary-color-90percent: rgba(255, 255, 255, 0.9);    
     --tertiary-color: rgba(128, 128, 128, 1);

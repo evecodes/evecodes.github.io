@@ -3,7 +3,11 @@ Portfolio Website
 
 For: art and code
 
--WORK IN PROGRESS-
+Version 1.0 
+
+--------
+
+-Update Log-
 
 Update 01 - Added the first HTML and CSS files.
 
@@ -38,3 +42,5 @@ Update 15 - Refined mobile menu and structure.
 Update 16 - Added art standout interaction and some minor name changes.
 
 Update 17 - Added mobile version of the Home page.
+
+Update 18 - Made and replaced placeholder index page image. Updated project image. Version 1.0 website ready.
