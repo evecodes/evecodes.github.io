@@ -56,7 +56,8 @@ p {
 }
 
 .main-margin {
-    margin-top: clamp(0.2rem, 5vh, 25rem);
+    /* margin-top: clamp(0.2rem, 5vh, 25rem); */
+    margin-top: 2.5rem;
     margin-bottom: 3rem;
 }
 
