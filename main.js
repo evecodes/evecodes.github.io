@@ -16,6 +16,7 @@ hamburgerMenu.addEventListener('click', e => {
 const standoutBtnOne = document.querySelector("#standout-btn-1");
 const standoutArtOne = document.querySelector("#standout-1");
 const imageArtOne = document.querySelector("#art-1");
+const bgDark = document.querySelector("#bg-dark-01"); /*Note: modal*/
 
 if (imageArtOne) {
     imageArtOne.addEventListener('click', e => {
