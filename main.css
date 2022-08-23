@@ -228,6 +228,19 @@ a {
     display: inline-block;
 }
 
+.setup-absolute-desktop {
+    position: absolute;
+    inset: 0 0 0 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.margin-top-fluid {
+    margin-top: 3.5rem;
+}
+
 /* .main-title {
     transform: translateY(-3rem);
     position: relative;
@@ -655,7 +668,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 35em) {
+@media screen and (max-width: 40em) {
     /*Navigation*/
     .nav-bar {
         background: var(--secondary-color-90percent);
@@ -819,6 +832,10 @@ footer {
     
     .transform-translateX {
         transform: translateX(0);
+    }
+
+    .margin-top-fluid {
+        margin-top: 0;
     }
 
     .link-title-art { 
