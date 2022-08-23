@@ -61,6 +61,53 @@ p {
     margin-bottom: 3rem;
 }
 
+.hovertext, .hovertext-top {
+    position: relative;
+    font-family: 'objektiv-mk1', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    color: var(--secondary-color);
+}
+
+.hovertext:before {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--key-color);
+    border-radius: 3px;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    padding: 0.3rem;
+    transition: opacity 200ms ease-in-out;
+    z-index: 200;
+}
+
+.hovertext-top:before {
+    position: absolute;
+    top: -105%;
+    left: 50%;
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--key-color);
+    border-radius: 3px;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    padding: 0.3rem;
+    transition: opacity 200ms ease-in-out;
+    z-index: 200;
+}
+
+.hovertext:hover:before, .hovertext-top:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
 .text-larger-title {
     color: var(--tertiary-color);
     font-weight: 500;
