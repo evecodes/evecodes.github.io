@@ -139,6 +139,11 @@ p {
     flex-wrap: wrap;
 }
 
+.flex-horizontal:first-child {
+    display: flex;
+    align-items: flex-start;
+}
+
 .setup-relative {
     position: relative;
 }
