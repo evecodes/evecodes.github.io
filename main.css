@@ -133,16 +133,17 @@ p {
 
 .flex-horizontal {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/*Safari height stretch fix*/
 .flex-horizontal:first-child {
     display: flex;
     align-items: flex-start;
 }
+/*--*/
 
 .setup-relative {
     position: relative;
