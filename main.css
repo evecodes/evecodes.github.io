@@ -180,6 +180,7 @@ nav {
 }
 
 .nav-bar {
+    height: 3.5rem;
     visibility: hidden;
     /* display: none; */
 }
