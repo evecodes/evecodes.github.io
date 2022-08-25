@@ -816,6 +816,7 @@ footer {
         position: fixed;
         top: 0;
         visibility: visible;
+        transform: translateZ(0);
         -webkit-transform: translateZ(0);
     }
 
