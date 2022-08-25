@@ -176,16 +176,14 @@ nav {
     margin-top: 2rem;
     margin-bottom: 2rem;
     justify-content: center;
-    height: 1px;
+    height: 1px; /*Needed for Safari*/
     z-index: 20;
 }
 
 .nav-bar {
     height: 3.5rem;
-    /* background-color: red; */
     visibility: hidden;
     /* display: none; */
-    /* z-index: 0; */
 }
 
 .menu-parts {
@@ -209,6 +207,7 @@ a {
 }
 
 .nav-active {
+    padding-bottom: 1.5rem;
     border-bottom: 0.25em solid var(--key-color);
 }
 
@@ -646,6 +645,10 @@ footer {
 }
 
 @media screen and (max-width: 48em) {
+    .nav-active {
+        padding-bottom: 1.2rem;
+    }
+
     .menu-parts {
         gap: 2rem;
     }
@@ -927,6 +930,7 @@ footer {
     }
 
     .nav-active {
+        padding-bottom: 0;
         border: 0;
     }
 
