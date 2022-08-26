@@ -56,7 +56,8 @@ p {
 }
 
 .main-margin {
-    margin-top: 2.5rem;
+    margin-top: 0;
+    /* margin-top: 2.5rem; */
     margin-bottom: 3rem;
 }
 
@@ -173,10 +174,11 @@ p {
 nav {
     background-color: var(--secondary-color-90percent);
     display: flex;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
     justify-content: center;
-    height: 1px; /*Needed for Safari*/
+    height: 3.5rem; /*Needed for Safari*/
     z-index: 20;
 }
 
@@ -207,7 +209,7 @@ a {
 }
 
 .nav-active {
-    padding-bottom: 1.5rem;
+    /* padding-bottom: 1.5rem; */
     border-bottom: 0.25em solid var(--key-color);
 }
 
@@ -645,8 +647,17 @@ footer {
 }
 
 @media screen and (max-width: 48em) {
-    .nav-active {
+    /* .nav-active {
         padding-bottom: 1.2rem;
+    } */
+    
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .outer-container {
+        margin-top: 0;
+        padding-top: 1rem;
     }
 
     .menu-parts {
@@ -675,7 +686,20 @@ footer {
 }
 
 @media screen and (orientation: portrait) {
-    .outer-container, .outer-container-index {
+    /* .outer-container {
+        margin-top: 0;
+        padding: 1rem;
+    } */
+
+    .main-margin {
+        margin-top: 0;
+    }
+
+    .outer-container {
+        margin-top: 0;
+    }
+
+    .outer-container-index {
         margin-top: 0;
         padding: 0;
     }
@@ -715,6 +739,7 @@ footer {
 
     .link-title-art { 
         margin: 0;
+        margin-top: 1rem;
     }
 
     .link-title-art:before {
@@ -812,6 +837,19 @@ footer {
 }
 
 @media screen and (max-width: 35em) {
+    h2 {
+        margin-bottom: 3rem;
+    }
+    
+    .main-margin {
+        margin-top: 2.5rem;
+    }
+
+    .hovertext:before {        
+        top: 120%;
+        left: -50%;        
+    }
+
     /*Navigation*/
     .nav-bar {
         background: var(--secondary-color-90percent);
@@ -821,7 +859,7 @@ footer {
         top: 0;
         visibility: visible;
         transform: translateZ(0);
-        -webkit-transform: translateZ(0);
+        -webkit-transform: translateZ(0); /*Needed for Safari*/
     }
 
     .menu-parts {
@@ -935,11 +973,17 @@ footer {
     }
 
     nav {
+        height: 1px; /*Needed for Safari*/
         margin-bottom: 0;
         background-color: var(--secondary-color);
     }
 
-    .outer-container, .outer-container-index {
+    .outer-container {
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+
+    .outer-container-index {
         margin-top: 0;
         padding: 0;
     }
