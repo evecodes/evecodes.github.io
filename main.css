@@ -401,6 +401,8 @@ a {
 }
 
 .standout-full > img {
+    display: flex;
+    align-items: flex-start; 
     max-height: 100%;
     max-width: 100%;
 }
