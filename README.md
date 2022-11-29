@@ -44,3 +44,5 @@ Update 16 - Added art standout interaction and some minor name changes.
 Update 17 - Added mobile version of the Home page.
 
 Update 18 - Made and replaced placeholder index page image. Updated project image. Version 1.0 website ready.
+
+Update 19 - Koi Botanical Gardens project added. Minor misc changes.
