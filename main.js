@@ -12,11 +12,30 @@ hamburgerMenu.addEventListener('click', e => {
 });
 
 /*Art page JS*/
+/*Art 0*/
+const standoutBtnZero = document.querySelector("#standout-btn-0");
+const standoutArtZero = document.querySelector("#standout-0");
+const imageArtZero = document.querySelector("#art-0");
+
+if (imageArtZero) {
+    imageArtZero.addEventListener('click', e => {
+        standoutBtnZero.classList.toggle('hide-button');
+        standoutArtZero.classList.toggle('hide-standout');
+    })
+};
+
+if (standoutBtnZero) {
+    standoutBtnZero.addEventListener('click', e => {
+        standoutBtnZero.classList.toggle('hide-button');
+        standoutArtZero.classList.toggle('hide-standout');
+    })
+};
+
 /*Art 1*/
 const standoutBtnOne = document.querySelector("#standout-btn-1");
 const standoutArtOne = document.querySelector("#standout-1");
 const imageArtOne = document.querySelector("#art-1");
-const bgDark = document.querySelector("#bg-dark-01"); /*Note: modal*/
+// const bgDark = document.querySelector("#bg-dark-01"); /*Note: modal*/
 
 if (imageArtOne) {
     imageArtOne.addEventListener('click', e => {
