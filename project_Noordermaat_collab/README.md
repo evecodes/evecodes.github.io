@@ -41,3 +41,5 @@ Update 15 - Added more article HTML pages.
 Update 16 - Added more article HTML pages and sub pages. Sidebar buttons adjustment.
 
 Update 17 - Updated anchor tags and links, added text content.
+
+Update 18 - Demo message added.

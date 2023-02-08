@@ -70,6 +70,12 @@ li {
     list-style: none;
 }
 
+.dummy-text-demo {
+    color: var(--nm-black);
+    font-size: var(--nm-main-text-size);
+    font-weight: bold;
+}
+
 .z-index-5 {
     z-index: 5;
 }
