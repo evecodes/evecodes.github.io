@@ -23,7 +23,7 @@
     --nm-font-style: normal;
     --nm-font-style-italic: italic;
     --nm-line-height-main-text: 1.4rem;
-} /*check anchor tags in text center*/
+}
 
 * {
     margin: 0;
@@ -52,6 +52,11 @@ img, svg, picture, video {
     max-width: 100%;
 }
 
+a > img {
+    display: block;
+    max-width: 100%;
+}
+
 a {
     color: var(--nm-white);
 }
@@ -59,7 +64,7 @@ a {
 a, p, li, button, label, input {
     font-family: var(--nm-font);
     font-style: var(--nm-font-style);
-} /*remove this from other parts*/
+} /*to be condensed*/
 
 a, li {    
     text-decoration: none;
@@ -143,10 +148,19 @@ li {
     border: 2px solid var(--nm-white);
 }
 
+.style-button {
+    font-family: var(--nm-font);
+    font-style: var(--nm-font-style);
+}
+
+.text-center {
+    text-align: center;
+}
+
 .divider-purple {
     width: 100%;
     height: 2px;
-    margin: 0.3rem 0 1rem 0; /*to change*/
+    margin: 0.3rem 0 1rem 0;
     background-color: var(--nm-deep-purple);
 }
 
@@ -156,12 +170,11 @@ li {
 
 .link-active, .highlight-yellow-hover:hover {
     color: var(--nm-yellow);
-} /*To add to all html(?) files*/
+}
 
 .flex-horizontal {
     display: flex;
-    flex-direction: row;    
-    /* align-items: center; */
+    flex-direction: row;
     overflow: hidden;
 }
 
@@ -181,7 +194,7 @@ li {
 
 .flex-end {
     justify-content: end;
-} /*adjust*/
+}
 
 .flex-justify-center {
     justify-content: center;
@@ -200,7 +213,7 @@ li {
 }
 
 /*For flex img safari, prevent img stretch*/
-.image-row-header > img, .flex-horizontal > img, .flex-vertical > img, .box-about > img {
+.image-row-header > img, .flex-horizontal > img, .flex-vertical > img, .box-about > img, a > img {
     align-items: flex-start;    
     max-height: 100%;
     max-width: 100%;
@@ -218,11 +231,6 @@ li {
 
 
 /*  --Navigation--  */
-
-/* .grid-nav {
-    display: grid;
-    grid-template: 40% 60% / 1fr ;
-} */
 
 .nm-logo-large {
     margin: 2.8rem 2.8rem 1rem 2.8rem;
@@ -280,11 +288,6 @@ input[type="search" i]::-webkit-search-cancel-button {
     margin-left: 1rem;
 }
 
-/* .temp-purple {
-    padding: 2rem 0 2rem 0;
-    background-color: rgba(81, 22, 129, 0.158);
-} */
-
 .nav-box {
     padding: 3rem 0 0 0;    
 }
@@ -308,9 +311,7 @@ nav::after {
 } */
 
 .navbar {
-    padding: 1.25rem 0 1.25rem 0;
-    /* padding: 0.25rem 0 0.25rem 0; */
-    /* margin: 1rem 0 1rem 0; */
+    padding: 1.25rem 0 1.25rem 0;    
     background-color: var(--nm-deep-purple);
     z-index: 15;
 }
@@ -329,8 +330,6 @@ nav::after {
     z-index: 20;
 }
 
-/*CHECK Z-index!*/
-
 .nav-link {
     color: var(--nm-white);
     font-family: var(--nm-font);
@@ -343,13 +342,6 @@ nav::after {
 .nav-link-active, .nav-link:hover {
     color: var(--nm-yellow);
 }
-
-.nav-purple-box {
-    position: absolute;
-    inset: 47% 0 0 0;
-    background-color: var(--nm-deep-purple);
-    z-index: 1;
-} /*before/after to do or --REMOVE-OBSOLETE--*/
 
 .header-shapes {
     position: absolute;
@@ -376,8 +368,7 @@ nav::after {
 .content-grid {
     display: grid;
     grid-template-columns: 30% 50% 1fr;
-    /* gap: 2.8rem; */
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .content-grid-wide-middle {
@@ -405,7 +396,7 @@ nav::after {
     background-position: top right;
     background-size: 35%;
     z-index: 1;
-} /*increase height of the shape SVG file*/
+}
 
 /*Sidebar left*/
 
@@ -454,14 +445,6 @@ nav::after {
 .article-list-sub-title > li > a:hover {
     color: var(--nm-yellow);
 }
-
-/* .article-list > li:hover {
-    color: var(--nm-yellow);
-} */
-
-/* .article-list-sub-title > li:hover{
-    color: var(--nm-yellow);
-} */
 
 .box-newsletter {
     color: var(--nm-white);
@@ -594,8 +577,7 @@ summary > a {
     font-style: var(--nm-font-style-italic);
     border: none;
     background-color: transparent;
-    cursor: pointer;
-    /* align-items: flex-start; */
+    cursor: pointer;    
 }
 
 .icon-box-article {
@@ -618,15 +600,7 @@ summary > a {
 .content-side-right {
     display: flex;
     flex-direction: column;
-    /* margin-left: auto; */
-    /* height: 100%;  */
-    /*subject to change*/
 }
-
-.style-button {
-    font-family: var(--nm-font);
-    font-style: var(--nm-font-style);
-} /*move to main css parts*/
 
 .button-sidecontent {
     font-size: var(--nm-main-text-size);
@@ -637,7 +611,8 @@ summary > a {
     margin-bottom: 1.5rem;
     padding: 0.8rem 0.2rem 0.8rem 0;
     outline: none;
-    border: none;
+    text-decoration: none;
+    border: transparent;
     border-radius: none;
     box-shadow: 0 0 1.5rem var(--nm-white);
     z-index: 10;
@@ -681,9 +656,7 @@ summary > a {
 
 /* --Footer-- */
 
-footer {
-    /* display: grid;
-    grid-template: 1fr, 30% 70%; */
+footer {    
     height: 4rem;
     width: 100%;
     z-index: 101;
@@ -719,7 +692,7 @@ footer {
     font-weight: var(--nm-font-light);
     font-style: var(--nm-font-style);
     color: var(--nm-white);
-} /*to do anchor tag styling spacing*/
+}
 
 .footer-shape-deep-purple {
     position: absolute;
