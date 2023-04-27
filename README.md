@@ -48,3 +48,5 @@ Update 18 - Made and replaced placeholder index page image. Updated project imag
 Update 19 - Koi Botanical Gardens project added. Minor misc changes.
 
 Update 20 - Projects added/removed.
+
+Update 21 - Projects added/removed/adjusted.
