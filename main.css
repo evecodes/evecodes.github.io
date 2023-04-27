@@ -200,7 +200,7 @@ nav {
 .menu-parts {
     display: flex;
     justify-content: center;
-    gap: 2.8rem;
+    gap: 3rem;
     z-index: 100;
 }
 
@@ -219,7 +219,7 @@ a {
 
 .nav-active {
     /* padding-bottom: 1.5rem; */
-    border-bottom: 0.25em solid var(--key-color);
+    border-bottom: 0.25rem solid var(--key-color);
 }
 
 
