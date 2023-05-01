@@ -207,7 +207,7 @@ function carouselMedium(mediaQueryMedium) {
     }
 }
 
-carouselDesktop(mediaQueryMedium);
+carouselMedium(mediaQueryMedium);
 mediaQueryMedium.addEventListener('change', carouselMedium);
 
 //MQ carousel mobile//
