@@ -305,7 +305,12 @@ input[type=search] {
     font-weight: var(--font-weight-500);
     font-family: var(--main-font);
     font-style: var(--font-style-normal);
+    -webkit-appearance: none; 
 }
+
+::-webkit-searchfield-decoration {display: none;};
+::-webkit-search-cancel-button { display: none; };
+/*-webkit parts for Safari search field/glass off*/
 
 input[type=search]:focus {
     background-color: var(--secondary-color);
