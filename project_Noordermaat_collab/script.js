@@ -1,5 +1,5 @@
 //--Read more button function--
-const readMoreButton = document.querySelectorAll ('.btn-read-more');
+const readMoreButton = document.querySelectorAll (".btn-read-more");
 
 if (readMoreButton) {
     readMoreButton.forEach(entry => {
@@ -13,4 +13,28 @@ if (readMoreButton) {
                 readMoreDots.classList.toggle ('readmore-dots-hide');                           
         });
     });    
+}
+
+//Modal message for mobile users
+const modalMobile = document.querySelector(".modal-background");
+const mqModalMobile = window.matchMedia("(min-width: 985px)");
+
+if (modalMobile) {
+    function desktopChange(mediaQueryDesktop) {
+        if (mediaQueryDesktop.matches) {        
+            modalMobile.setAttribute('data-modal-active', 'off');        
+        } else {              
+            modalMobile.setAttribute('data-modal-active', 'on'); 
+        }
+    }
+
+    desktopChange(mqModalMobile);
+    mqModalMobile.addEventListener('change', desktopChange);
+    
+
+    const modalButton = document.querySelector(".modal-button");
+
+    modalButton.addEventListener('click', e=> {
+        modalMobile.setAttribute('data-modal-active', 'off');
+    })
 }

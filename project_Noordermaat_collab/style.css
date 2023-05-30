@@ -10,7 +10,9 @@
     --nm-purple: hsl(288, 59%, 32%);
     --nm-deep-purple: hsl(266, 56%, 33%);
     --nm-white: hsl(0, 0%, 100%);
+    --nm-white-90percent: hsl(0, 0%, 100%, 0.9);
     --nm-black: hsl(0, 0%, 0%);
+    --nm-black-30percent: hsla(0, 0%, 0%, 0.3);
     --nm-font: 'Open Sans', sans-serif;
     --nm-title-text-size: 1.063rem; /*17px*/
     --nm-main-text-size: 0.875rem; /*14px*/ 
@@ -214,6 +216,74 @@ li {
     justify-content: space-between;
 }
 
+/*Modal message for mobile users*/
+[data-modal-active="off"] {
+    display: none;
+}
+
+[data-modal-active="on"] {
+    display: block;
+}
+
+.modal-background {
+    position: fixed;
+    inset: 0;
+    background-color: var(--nm-white-90percent);
+    z-index: 999;   
+}
+
+.modal-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.modal-message-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 30ch;
+    width: 30%;
+    height: 20%;
+    min-height: 8rem;
+    background-color: var(--nm-deep-purple);
+    border-radius: 3px;
+}
+
+.modal-message, .modal-button {
+    font-family: var(--nm-font);    
+}
+
+.modal-message {
+    font-size: var(--nm-main-text-size);
+    font-weight: var(--nm-font-bold);
+    color: var(--nm-white);
+    margin: 0 1rem 1rem 1rem;
+}
+
+.modal-button {
+    font-size: var(--nm-main-text-size);
+    color: var(--nm-white);
+    background-color: var(--nm-magenta);    
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    outline: transparent;
+    text-decoration: none;
+    border: transparent;
+    /* border: 1px solid var(--nm-purple); */
+    box-shadow: 0 0 0.5rem var(--nm-black-30percent);
+    border-radius: none;
+    cursor: pointer;
+}
+
+.modal-button:focus, .modal-button:hover {
+    color: var(--nm-black);
+    background-color: var(--nm-magenta-10percent-solid);
+}
+
 /*For flex img safari, prevent img stretch*/
 .image-row-header > img, .flex-horizontal > img, .flex-vertical > img, .box-about > img, a > img {
     align-items: flex-start;    
@@ -270,6 +340,7 @@ input[type=search] {
     border: 1px solid var(--nm-deep-purple);
     caret-color: var(--nm-deep-purple);
     outline: none;
+    -webkit-appearance: none;
 }
 
 input[type=search]:focus {
@@ -282,6 +353,10 @@ input[type=search]:focus {
 input[type="search" i]::-webkit-search-cancel-button {
     /* appearance: none;*/
     filter: invert(100%) saturate(30);
+}
+
+input[type="search" i]::-webkit-searchfield-decoration {
+    appearance: none;
 }
 
 .search-glass {
